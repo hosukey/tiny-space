@@ -1,0 +1,152 @@
+.shop {
+  border-top: 1px solid black;
+  h1 {
+    font-family: 'BioRhyme', serif;
+    padding: 2rem;
+    // overflow: hidden;
+  }
+
+  &-container {
+    display: flex;
+    margin-bottom: 5rem;
+
+    .shop-filter {
+      font-family: 'roboto', sans-serif;
+      padding-left: 2rem;
+      border-right: 1px solid black;
+      flex: 1;
+      p {
+        font-weight: 600;
+      }
+
+      &_links {
+        margin-right: 3rem;
+        li {
+          margin-top: 2rem;
+        }
+
+        li:last-child {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .shop-items {
+      flex: 4;
+      margin: 0 1rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      width: 100%;
+      gap: 1rem;
+      font-family: 'roboto', sans-serif;
+
+      .image-container {
+        min-width: 300px;
+        min-height: 330px;
+        position: relative;
+        &:hover .cart {
+          opacity: 100%;
+        }
+
+        &:hover .image-container,
+        &:focus .image-container {
+          transform: scale(1.2);
+        }
+        .cart {
+          cursor: pointer;
+          opacity: 0;
+          transition: all 0.3s ease-in-out;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          text-align: center;
+          transform: translate(-50%, -50%);
+          .add {
+            i {
+              color: white;
+              font-size: 1.4rem;
+              padding: 0.7rem;
+              border-radius: 50%;
+              border: 2px solid white;
+            }
+            margin-bottom: 1rem;
+          }
+          span {
+            color: white;
+          }
+        }
+      }
+
+      .item-description {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+        .name {
+          font-weight: 600;
+        }
+      }
+
+      &_item:nth-child(1) {
+        .image-container {
+          background: url(../img/pexels-artem-lysenko-2258083.webp) 50% 10% /
+            cover;
+        }
+      }
+      &_item:nth-child(2) {
+        .image-container {
+          background: url(../img/pexels-ron-lach-8346055.webp) center center /
+            cover;
+        }
+      }
+
+      &_item:nth-child(3) {
+        .image-container {
+          background: url(../img/pexels-athena-2180883.webp) center bottom /
+            cover;
+        }
+      }
+
+      &_item:nth-child(4) {
+        .image-container {
+          background: url(../img/pexels-ksenia-chernaya-6334366.webp) center
+            bottom / cover;
+        }
+      }
+      &_item:nth-child(5) {
+        .image-container {
+          background: url(../img/pexels-ksenia-chernaya-3965520.webp) center
+            center / cover;
+        }
+      }
+      &_item:nth-child(6) {
+        .image-container {
+          background: url(../img/pexels-yura-forrat-8662029.webp) center center /
+            cover;
+        }
+      }
+      &_item:nth-child(7) {
+        .image-container {
+          background: url(../img/pexels-charlotte-may-5825398.webp) center
+            bottom / cover;
+        }
+      }
+
+      &_item:nth-child(8) {
+        .image-container {
+          background: url(../img/pexels-rodnae-productions-8581013.webp) center
+            bottom / cover;
+        }
+      }
+
+      &_item:nth-child(9) {
+        .image-container {
+          background: url(../img/pexels-rachel-claire-4846087.webp) center
+            bottom / cover;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.navi {
+  width: 100%;
+  font-family: 'BioRhyme', serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 0 2rem;
+
+  & .logo {
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  #{&}__right {
+    display: flex;
+    &-menu a {
+      margin-right: 1rem;
+    }
+    &-cart span {
+      margin-left: 0.2rem;
+    }
+  }
+}

@@ -1,0 +1,232 @@
+.contents {
+  margin: 2rem auto;
+  .grid {
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+
+    .container {
+      overflow: hidden;
+      font-family: 'BioRhyme', serif;
+      color: white;
+      position: relative;
+    }
+    .container:nth-child(1) {
+      .container-image {
+        width: 100%;
+        height: 100%;
+        background: url(../img/pexels-max-vakhtbovych-7746097.webp) 50% 80% /
+          cover;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover .container-image,
+      &:focus .container-image {
+        transform: scale(1.2);
+      }
+      p {
+        font-size: 1.4rem;
+        @include centerP;
+      }
+
+      a {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+      }
+    }
+
+    .container:nth-child(2) {
+      .container-image {
+        width: 100%;
+        height: 100%;
+        background: url(../img/pexels-pnw-production-7577244.webp) center center /
+          cover;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover .container-image,
+      &:focus .container-image {
+        transform: scale(1.2);
+      }
+      p {
+        font-size: 1.4rem;
+        @include centerP;
+      }
+
+      a {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+      }
+    }
+
+    .container:nth-child(3) {
+      grid-row: 1/3;
+
+      .container-image {
+        width: 100%;
+        height: 100%;
+        background: url(../img/pexels-mart-production-8434750.webp) center
+          center / cover;
+        transform: scale(1);
+        transition: all 0.3s ease-in;
+      }
+      &:hover .container-image,
+      &:focus .container-image {
+        transform: scale(1.2);
+      }
+      .container-text {
+        text-align: center;
+        margin-top: 8rem;
+        p {
+          font-size: 1.6rem;
+        }
+        @include centerP;
+        button {
+          @include shopCTA;
+        }
+      }
+    }
+  }
+}
+
+.scrolling-container {
+  font-family: 'BioRhyme Expanded', serif;
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 80px;
+  overflow-x: hidden;
+  background-color: black;
+
+  .scrolling {
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 14s linear infinite;
+    margin: 1.4rem;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.services {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 1rem;
+  h1 {
+    font-family: 'BioRhyme', serif;
+    text-align: center;
+  }
+  .services-item {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      li:first-child {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 1px solid rgb(228, 228, 228);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease-out;
+        cursor: pointer;
+        i {
+          font-size: 2rem;
+        }
+        &:hover {
+          transform: translateY(-10px);
+        }
+      }
+
+      li:nth-child(2) {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.subscribe {
+  background-color: rgb(245, 245, 245);
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .subscribe-container {
+    i {
+      font-size: 1.3rem;
+      margin-left: 0.2rem;
+    }
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem 0 5rem 0;
+    gap: 2rem;
+    max-width: 1200px;
+  }
+  h1 {
+    padding: 0 1rem;
+
+    font-family: 'BioRhyme', serif;
+  }
+  p {
+    padding: 0 1rem;
+
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .subscribe-form {
+    padding: 1rem;
+    margin-top: 2rem;
+    .email-input {
+      width: 300px;
+      height: 40px;
+      border: 1px solid black;
+      padding: 0 1rem;
+    }
+
+    .submit-button {
+      font-family: 'BioRhyme', serif;
+      cursor: pointer;
+      height: 40px;
+      padding: 0 1rem;
+      background-color: black;
+      color: white;
+      border: 0 none;
+      transition: all 0.4s ease-out;
+      &:hover {
+        background-color: plum;
+        color: black;
+        border: 1px solid black;
+      }
+    }
+  }
+}

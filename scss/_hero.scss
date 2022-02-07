@@ -1,0 +1,28 @@
+.hero {
+  height: 500px;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/pexels-max-vakhtbovych-6492402.webp) center bottom / cover
+      no-repeat;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    z-index: 3;
+    text-align: center;
+    h1 {
+      font-family: 'BioRhyme', serif;
+      color: white;
+    }
+    p {
+      font-family: 'Roboto', sans-serif;
+      color: white;
+    }
+    button {
+      @include shopCTA;
+    }
+  }
+}
