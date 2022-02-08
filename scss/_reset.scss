@@ -39,6 +39,12 @@ button {
   cursor: pointer;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 // Mixins
 @mixin centerP {
   position: absolute;
