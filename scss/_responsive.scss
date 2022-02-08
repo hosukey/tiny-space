@@ -1,3 +1,27 @@
+@include media-xl {
+  .shop-container {
+    flex-direction: column;
+    .shop-filter {
+      border-right: none;
+      border-bottom: 1px solid rgb(240, 240, 240);
+
+      &_links {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        li {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+  .shop-container {
+    .shop-items {
+      margin: 0;
+      padding: 0 1rem;
+    }
+  }
+}
+
 @include media-lg {
   .subscribe {
     .subscribe-container {
@@ -72,6 +96,13 @@
       }
     }
   }
+
+  .shop-container {
+    .shop-items {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(5, 300px);
+    }
+  }
 }
 
 @include media-sm {
@@ -107,5 +138,14 @@
 
   .footer {
     padding: 0 1rem;
+  }
+
+  .shop-container {
+    .item-description {
+      .name,
+      .price {
+        font-size: 0.8rem;
+      }
+    }
   }
 }

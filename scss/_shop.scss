@@ -34,26 +34,43 @@
     .shop-items {
       flex: 4;
       margin: 0 1rem;
-      overflow-x: hidden;
-      overflow-y: auto;
+      overflow: hidden;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, 300px);
       width: 100%;
-      gap: 1rem;
       font-family: 'roboto', sans-serif;
 
-      .image-container {
-        min-width: 300px;
-        min-height: 330px;
+      &__item {
+        overflow: hidden;
         position: relative;
+        padding: 2rem 0.4rem;
+
+        &:hover .image-container img {
+          filter: brightness(30%);
+        }
+      }
+
+      .image-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+
         &:hover .cart {
           opacity: 100%;
         }
-
-        &:hover .image-container,
-        &:focus .image-container {
+        &:hover .image,
+        &:focus .image {
           transform: scale(1.2);
+          filter: brightness(0.2);
+        }
+        .image {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          transition: all 0.3s ease-in-out;
         }
         .cart {
           cursor: pointer;
@@ -64,15 +81,27 @@
           left: 50%;
           text-align: center;
           transform: translate(-50%, -50%);
+
+          &:hover span {
+            color: plum;
+          }
+
+          &:hover .add i {
+            color: plum;
+            border: 3px solid plum;
+          }
+
           .add {
             i {
               color: white;
               font-size: 1.4rem;
               padding: 0.7rem;
+              width: 50px;
+              height: 50px;
               border-radius: 50%;
-              border: 2px solid white;
+              border: 3px solid white;
             }
-            margin-bottom: 1rem;
+            margin-bottom: 0.6rem;
           }
           span {
             color: white;
@@ -89,60 +118,59 @@
         }
       }
 
-      &_item:nth-child(1) {
-        .image-container {
+      &__item:nth-child(1) {
+        .image-container .image {
           background: url(../img/pexels-artem-lysenko-2258083.webp) 50% 10% /
             cover;
         }
       }
-      &_item:nth-child(2) {
-        .image-container {
+      &__item:nth-child(2) {
+        .image-container .image {
           background: url(../img/pexels-ron-lach-8346055.webp) center center /
             cover;
         }
       }
 
-      &_item:nth-child(3) {
-        .image-container {
-          background: url(../img/pexels-athena-2180883.webp) center bottom /
-            cover;
+      &__item:nth-child(3) {
+        .image-container .image {
+          background: url(../img/pexels-athena-2180883.webp) center 64% / cover;
         }
       }
 
-      &_item:nth-child(4) {
-        .image-container {
+      &__item:nth-child(4) {
+        .image-container .image {
           background: url(../img/pexels-ksenia-chernaya-6334366.webp) center
-            bottom / cover;
+            center / cover;
         }
       }
-      &_item:nth-child(5) {
-        .image-container {
+      &__item:nth-child(5) {
+        .image-container .image {
           background: url(../img/pexels-ksenia-chernaya-3965520.webp) center
             center / cover;
         }
       }
-      &_item:nth-child(6) {
-        .image-container {
+      &__item:nth-child(6) {
+        .image-container .image {
           background: url(../img/pexels-yura-forrat-8662029.webp) center center /
             cover;
         }
       }
-      &_item:nth-child(7) {
-        .image-container {
+      &__item:nth-child(7) {
+        .image-container .image {
           background: url(../img/pexels-charlotte-may-5825398.webp) center
             bottom / cover;
         }
       }
 
-      &_item:nth-child(8) {
-        .image-container {
+      &__item:nth-child(8) {
+        .image-container .image {
           background: url(../img/pexels-rodnae-productions-8581013.webp) center
             bottom / cover;
         }
       }
 
-      &_item:nth-child(9) {
-        .image-container {
+      &__item:nth-child(9) {
+        .image-container .image {
           background: url(../img/pexels-rachel-claire-4846087.webp) center
             bottom / cover;
         }
