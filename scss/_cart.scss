@@ -4,7 +4,7 @@
   right: 0;
   top: 0;
   background-color: white;
-  min-width: 420px;
+
   padding: 2rem;
   transition: all 0.3s ease-in-out;
   transform: translateX(100%);
@@ -42,6 +42,7 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 1rem;
+      gap: 1rem;
       .image {
         display: flex;
         font-family: 'Roboto', sans-serif;

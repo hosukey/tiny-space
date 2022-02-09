@@ -107,8 +107,13 @@
 
 @include media-sm {
   .addcart {
-    min-width: 100%;
+    padding: 1rem;
+    width: 100%;
     height: 100%;
+
+    .cart-items__item {
+      font-size: 0.9rem;
+    }
   }
 
   .navi {
