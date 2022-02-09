@@ -15,6 +15,54 @@
     <script src="js/main.js" defer></script>
   </head>
   <body>
+    <!-- cart -->
+    <div class="addcart">
+      <div class="cart-container">
+        <div class="cart-top">
+          <div class="cart-added">Cart (<span>0</span>)</div>
+          <div class="cart-close">
+            <button><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="cart-items">
+          <div class="cart-items__item">
+            <div class="image">
+              <img src="img/pexels-artem-lysenko-2258083.webp" alt="" />
+              <div class="name">Dolphine Accent Chair</div>
+            </div>
+            <div class="amount">
+              <div class="amount-top">
+                <div class="count">x1</div>
+                <div class="price">$300</div>
+              </div>
+              <div class="remove"><button>remove</button></div>
+            </div>
+          </div>
+
+          <div class="cart-items__item">
+            <div class="image">
+              <img src="img/pexels-charlotte-may-5825398.webp" alt="" />
+              <div class="name">Karina Accent Chair</div>
+            </div>
+            <div class="amount">
+              <div class="amount-top">
+                <div class="count">x1</div>
+                <div class="price">$199</div>
+              </div>
+              <div class="remove"><button>remove</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="cart-totals">Subtotal $499</div>
+        <div class="empty-cart">
+          <button><i class="fa-solid fa-trash"></i> empty cart</button>
+        </div>
+        <div class="checkout"><button>Check Out</button></div>
+      </div>
+    </div>
+
     <header>
       <nav class="navi">
         <div class="logo"><a href="index.html">Tiny Space</a></div>
@@ -24,7 +72,7 @@
             <a href="">Contact</a>
           </li>
           <li class="navi__right-cart">
-            <a href="">Cart<span>(0)</span></a>
+            <div class="cartBtn">Cart (<span>0</span>)</div>
           </li>
         </ul>
       </nav>
@@ -55,7 +103,7 @@
               <div class="image"></div>
               <div class="cart">
                 <div class="add"><i class="fas fa-plus"></i></div>
-                <span>Add to Cart</span>
+                <span class="addToCartBtn">Add to Cart</span>
               </div>
             </div>
             <div class="item-description">
@@ -144,7 +192,7 @@
             </div>
             <div class="item-description">
               <div class="name">Kayden Bench</div>
-              <div class="price">$999</div>
+              <div class="price">$300</div>
             </div>
           </ul>
 
