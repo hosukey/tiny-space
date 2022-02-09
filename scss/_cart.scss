@@ -1,0 +1,99 @@
+.addcart {
+  z-index: 4;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: white;
+  width: 420px;
+  padding: 2rem;
+
+  .cart-container {
+    .cart-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .cart-added {
+        font-family: 'BioRhyme', serif;
+        font-size: 1.2rem;
+      }
+
+      .cart-close {
+        button {
+          padding: 0.2rem;
+          background-color: transparent;
+          font-size: 1.1rem;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+    .line {
+      background-color: black;
+      height: 1px;
+      width: 100%;
+      margin: 1rem 0;
+    }
+
+    .cart-items__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      .image {
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        .name {
+          margin-left: 0.4rem;
+        }
+      }
+      .amount {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
+
+        .remove button {
+          background-color: transparent;
+          color: gray;
+          text-decoration: underline;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+      img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+      }
+    }
+
+    .empty-cart {
+      text-align: center;
+      margin-top: 2rem;
+      button {
+        font-size: 0.9rem;
+        background-color: transparent;
+        font-family: 'BioRhyme', serif;
+
+        &:hover {
+          color: plum;
+        }
+      }
+    }
+
+    .checkout {
+      text-align: center;
+      margin: 3rem 0 1.2rem 0;
+      button {
+        padding: 0.8rem 1.8rem;
+        background-color: black;
+        color: white;
+        font-family: 'BioRhyme', serif;
+        font-size: 0.9rem;
+        cursor: default;
+      }
+    }
+  }
+}
