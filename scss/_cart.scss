@@ -6,6 +6,8 @@
   background-color: white;
   width: 420px;
   padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(420px);
 
   .cart-container {
     .cart-top {

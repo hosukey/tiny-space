@@ -27,3 +27,19 @@ function changeActivePosition(activeItem) {
   }
   activeItem.classList.add('active');
 }
+
+// cart
+const cartNavi = document.querySelector('.navi__right-cart');
+const cart = document.querySelector('.addcart');
+const cartCloseButton = document.querySelector('.cart-close');
+
+cartNavi.addEventListener('click', displayCart);
+cartCloseButton.addEventListener('click', closeCart);
+
+function displayCart() {
+  cart.style.transform = 'translateX(0)';
+}
+
+function closeCart() {
+  cart.style.transform = 'translateX(420px)';
+}
