@@ -41,5 +41,5 @@ function displayCart() {
 }
 
 function closeCart() {
-  cart.style.transform = 'translateX(420px)';
+  cart.style.transform = 'translateX(100%)';
 }
