@@ -4,10 +4,10 @@
   right: 0;
   top: 0;
   background-color: white;
-  width: 420px;
+  min-width: 420px;
   padding: 2rem;
   transition: all 0.3s ease-in-out;
-  transform: translateX(420px);
+  transform: translateX(100%);
 
   .cart-container {
     .cart-top {
