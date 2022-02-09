@@ -15,6 +15,10 @@
       padding-left: 2rem;
       border-right: 1px solid black;
       flex: 1;
+
+      .active {
+        color: plum;
+      }
       p {
         font-weight: 600;
       }
@@ -23,6 +27,7 @@
         margin-right: 3rem;
         li {
           margin-top: 2rem;
+          cursor: pointer;
         }
 
         li:last-child {
@@ -40,6 +45,64 @@
       grid-template-rows: repeat(3, 400px);
       width: 100%;
       font-family: 'roboto', sans-serif;
+
+      &__item:nth-child(1) {
+        .image-container .image {
+          background: url(../img/pexels-artem-lysenko-2258083.webp) 50% 10% /
+            cover;
+        }
+      }
+      &__item:nth-child(2) {
+        .image-container .image {
+          background: url(../img/pexels-ron-lach-8346055.webp) center center /
+            cover;
+        }
+      }
+
+      &__item:nth-child(3) {
+        .image-container .image {
+          background: url(../img/pexels-athena-2180883.webp) center 64% / cover;
+        }
+      }
+
+      &__item:nth-child(4) {
+        .image-container .image {
+          background: url(../img/pexels-ksenia-chernaya-6334366.webp) center
+            center / cover;
+        }
+      }
+      &__item:nth-child(5) {
+        .image-container .image {
+          background: url(../img/pexels-ksenia-chernaya-3965520.webp) center
+            center / cover;
+        }
+      }
+      &__item:nth-child(6) {
+        .image-container .image {
+          background: url(../img/pexels-yura-forrat-8662029.webp) center center /
+            cover;
+        }
+      }
+      &__item:nth-child(7) {
+        .image-container .image {
+          background: url(../img/pexels-charlotte-may-5825398.webp) center
+            bottom / cover;
+        }
+      }
+
+      &__item:nth-child(8) {
+        .image-container .image {
+          background: url(../img/pexels-rodnae-productions-8581013.webp) center
+            bottom / cover;
+        }
+      }
+
+      &__item:nth-child(9) {
+        .image-container .image {
+          background: url(../img/pexels-rachel-claire-4846087.webp) center
+            bottom / cover;
+        }
+      }
 
       &__item {
         overflow: hidden;
@@ -115,64 +178,6 @@
         margin-top: 0.5rem;
         .name {
           font-weight: 600;
-        }
-      }
-
-      &__item:nth-child(1) {
-        .image-container .image {
-          background: url(../img/pexels-artem-lysenko-2258083.webp) 50% 10% /
-            cover;
-        }
-      }
-      &__item:nth-child(2) {
-        .image-container .image {
-          background: url(../img/pexels-ron-lach-8346055.webp) center center /
-            cover;
-        }
-      }
-
-      &__item:nth-child(3) {
-        .image-container .image {
-          background: url(../img/pexels-athena-2180883.webp) center 64% / cover;
-        }
-      }
-
-      &__item:nth-child(4) {
-        .image-container .image {
-          background: url(../img/pexels-ksenia-chernaya-6334366.webp) center
-            center / cover;
-        }
-      }
-      &__item:nth-child(5) {
-        .image-container .image {
-          background: url(../img/pexels-ksenia-chernaya-3965520.webp) center
-            center / cover;
-        }
-      }
-      &__item:nth-child(6) {
-        .image-container .image {
-          background: url(../img/pexels-yura-forrat-8662029.webp) center center /
-            cover;
-        }
-      }
-      &__item:nth-child(7) {
-        .image-container .image {
-          background: url(../img/pexels-charlotte-may-5825398.webp) center
-            bottom / cover;
-        }
-      }
-
-      &__item:nth-child(8) {
-        .image-container .image {
-          background: url(../img/pexels-rodnae-productions-8581013.webp) center
-            bottom / cover;
-        }
-      }
-
-      &__item:nth-child(9) {
-        .image-container .image {
-          background: url(../img/pexels-rachel-claire-4846087.webp) center
-            bottom / cover;
         }
       }
     }
