@@ -103,6 +103,13 @@
       grid-template-rows: repeat(5, 300px);
     }
   }
+
+  .contactus-container {
+    flex-direction: column;
+    .contactus-container__left {
+      flex-direction: row;
+    }
+  }
 }
 
 @include media-sm {

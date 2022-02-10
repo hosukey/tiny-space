@@ -33,7 +33,11 @@ i {
 button:focus,
 button:active,
 input:focus,
-input:active {
+input:active,
+textarea:focus,
+textarea:active,
+select:focus,
+select:active {
   outline: none;
   box-shadow: none;
 }

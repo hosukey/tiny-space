@@ -1,1 +1,107 @@
-.
+.contactus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem;
+  border-top: 1px solid black;
+
+  h1 {
+    font-family: 'BioRhyme', serif;
+    padding: 2rem;
+  }
+
+  .contactus-container {
+    max-width: 900px;
+    display: flex;
+    gap: 2rem;
+    i {
+      font-size: 1.4rem;
+      color: black;
+    }
+
+    &__left {
+      h3 {
+        font-family: 'BioRhyme', serif;
+        padding: 1rem;
+      }
+
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .email {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        flex: 1;
+        border: 1px solid rgb(228, 228, 228);
+        .email-address {
+          font-weight: 600;
+        }
+      }
+      .call {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        flex: 1;
+        border: 1px solid rgb(216, 216, 216);
+        p {
+          text-align: center;
+          color: rgb(71, 71, 71);
+          width: 80%;
+          font-size: 0.9rem;
+          line-height: 1.1rem;
+        }
+        .phonenumber {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .contactform {
+      label {
+        font-size: 0.8rem;
+        padding: 0.2rem 0;
+        color: rgb(44, 44, 44);
+        margin-top: 0.6rem;
+      }
+      display: grid;
+      input,
+      select {
+        height: 40px;
+        padding: 10px;
+        border: 2px solid black;
+      }
+
+      select {
+        font-weight: 600;
+        cursor: pointer;
+      }
+      textarea {
+        resize: none;
+        padding: 10px;
+        border: 2px solid black;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      #submitBtn {
+        cursor: pointer;
+        margin-top: 1rem;
+        color: white;
+        background-color: black;
+        font-family: 'BioRhyme', serif;
+        font-size: 1.1rem;
+        height: 50px;
+        &:hover {
+          background-color: plum;
+          color: black;
+        }
+      }
+    }
+  }
+}
