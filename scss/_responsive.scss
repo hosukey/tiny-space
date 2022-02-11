@@ -165,4 +165,10 @@
       }
     }
   }
+
+  .contactus-container {
+    .contactus-container__left {
+      flex-direction: column;
+    }
+  }
 }
