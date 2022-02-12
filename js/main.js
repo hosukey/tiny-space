@@ -1,4 +1,5 @@
 'use strict';
+
 // Filter Items -------------------------------------------
 const filterTitle = document.querySelectorAll('.filter-title');
 const allCategoryPosts = document.querySelectorAll('.all');
@@ -36,19 +37,6 @@ const cartCloseButton = document.querySelector('.cart-close');
 
 cartNavi.addEventListener('click', displayCart);
 cartCloseButton.addEventListener('click', closeCart);
-
-function displayCart() {
-  if (document.querySelectorAll('.cart-items__item').length > 0) {
-    cart.style.transform = 'translateX(0)';
-  }
-}
-
-function closeCart() {
-  cart.style.transform = 'translateX(100%)';
-}
-
-// Cart Add/Remove Items
-const addToCartBtns = document.querySelectorAll('.cart');
 
 // Products List
 let products = [
@@ -107,6 +95,19 @@ let products = [
     inCart: 0,
   },
 ];
+
+function displayCart() {
+  if (document.querySelectorAll('.cart-items__item').length > 0) {
+    cart.style.transform = 'translateX(0)';
+  }
+}
+
+function closeCart() {
+  cart.style.transform = 'translateX(100%)';
+}
+
+// Cart Add/Remove Items
+const addToCartBtns = document.querySelectorAll('.cart');
 
 // Click event listener on Add to Cart Button
 for (let i = 0; i < addToCartBtns.length; i++) {
@@ -194,7 +195,7 @@ function displayCartItems() {
 <div class="amount">
   <div class="amount-top">
     <div class="count">x${item.inCart}</div>
-    <div class="price">$${item.inCart * item.price}</div>
+    <div class="price">$${item.price}</div>
   </div>
   <div class="remove"><button>remove</button></div>
 </div>
@@ -208,10 +209,6 @@ Subtotal $${cartCost}
   }
   console.log(cartItems);
 }
-
-// Reload Items whenever the item is added to the cart
-
-function reloadItems() {}
 
 onLoadCartNumbers();
 displayCartItems();
