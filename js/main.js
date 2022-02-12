@@ -97,9 +97,6 @@ let products = [
 
 // Cart Open/Close
 function displayCart() {
-  // if (document.querySelectorAll('.cart-items__item').length > 0) {
-  //   cart.style.transform = 'translateX(0)';
-  // }
   cart.style.transform = 'translateX(0)';
 }
 
