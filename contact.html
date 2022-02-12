@@ -12,6 +12,25 @@
     <script src="js/main.js" defer></script>
   </head>
   <body>
+     <!-- cart -->
+     <div class="addcart">
+      <div class="cart-container">
+        <div class="cart-top">
+          <div class="cart-added">Cart (<span>0</span>)</div>
+          <div class="cart-close">
+            <button><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="cart-items"></div>
+        <div class="line"></div>
+        <div class="cart-totals"></div>
+        <div class="empty-cart">
+          <button><i class="fa-solid fa-trash"></i> empty cart</button>
+        </div>
+        <div class="checkout"><button>Check Out</button></div>
+      </div>
+    </div>
     <header>
       <nav class="navi">
         <div class="logo"><a href="index.html">Tiny Space</a></div>
@@ -20,7 +39,9 @@
             <a href="shop.html">Shop</a>
             <a href="">Contact</a>
           </li>
-          <!-- <li class="navi__right-cart">Cart<span>(0)</span></li> -->
+          <li class="navi__right-cart">
+            <div class="cartBtn">Cart (<span>0</span>)</div>
+          </li>
         </ul>
       </nav>
     </header>

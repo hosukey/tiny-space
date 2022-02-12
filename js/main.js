@@ -201,7 +201,7 @@ function displayCartItems() {
 `;
 
       document.querySelector('.cart-totals').innerHTML = `
-Subtotal $${cartCost}
+<strong>Subtotal</strong> $${cartCost}
 `;
     });
   } else {
